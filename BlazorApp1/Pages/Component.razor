@@ -1,0 +1,59 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using BlazorApp.Data
+
+
+<link rel="stylesheet" href="/path/to/your/css/file.css" />
+<h1>My Chocolate Page</h1>
+
+<div class="chocolate-wrapper">
+    <div class="chocolate">
+        <img src="/path/to/your/image.jpg" alt="Chocolate Image" />
+        <h2>Dark Chocolate</h2>
+        <p>A rich, bittersweet chocolate that pairs well with red wine.</p>
+    </div>
+    <div class="chocolate">
+        <img src="/path/to/your/image.jpg" alt="Chocolate Image" />
+        <h2>Milk Chocolate</h2>
+        <p>A creamy, smooth chocolate that melts in your mouth.</p>
+    </div>
+    <div class="chocolate">
+        <img src="/path/to/your/image.jpg" alt="Chocolate Image" />
+        <h2>White Chocolate</h2>
+        <p>A sweet, vanilla-flavored chocolate that is perfect for baking.</p>
+    </div>
+</div>
+<style>
+    .chocolate-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chocolate {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #f5f5f5;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+        width: 20rem;
+    }
+
+        .chocolate img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .chocolate h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .chocolate p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+</style>
+
